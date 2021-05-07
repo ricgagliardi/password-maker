@@ -34,7 +34,7 @@ function getPass() {
 
 // console.log(getPass())
 addEventListener('fetch', evt => {
-  const resp = new Response(getPass(), {headers: {'content-type': 'text/plain'}})
+  const resp = new Response(`<html><body><h1 style="font-family: arial, sans, sans-serif;"> ${getPass()}</h1></body></html>`, {headers: {'content-type': 'text/html'}})
   evt.respondWith(resp)
 })
 
