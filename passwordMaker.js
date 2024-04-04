@@ -28,8 +28,8 @@ function getPass() {
   // // console.log('adjs', adjs.length,'nouns', nouns.length)
   const adj = adjs[Math.floor(Math.random() * adjs.length)]
   const noun = nouns[Math.floor(Math.random() * nouns.length)]
-  const suffix = Math.floor(Math.random() * 1000)
-  return `${adj}${capitalize(noun)};${suffix}`
+  const suffix = Math.floor(Math.random() * 100)
+  return `${adj}${capitalize(noun)}#${suffix}`
 }
 
 // console.log(getPass())
